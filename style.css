@@ -34,6 +34,8 @@ body {
   background-position: top center; /* Centralizar a Imagem tanto no meio da parte de cima, quanto no meio da pagina */
   background-size: cover; /* Cobrir o Fundo */
   /* Ou usar esse atalho padrão: "background: color image repeat position/size */
+
+  width: 100vh;
 }
 
 /* Configuração Geral da tag <body> */
@@ -164,4 +166,15 @@ footer {
   text-align: center;
   font-size: 14px;
   font-weight: normal;
+}
+
+/* media queries */
+
+@media (min-width: 700px) {
+  :root {
+    --bg-url: url(./assets/bg-desktop.jpg);
+  }
+  .light {
+    --bg-url: url(.assets/bg-desktop-light.jpg);
+  }
 }
